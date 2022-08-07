@@ -1,0 +1,1031 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00000098;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: cover;
+    height: auto;
+    margin: 0px;
+}
+
+header {
+    position: relative;
+}
+
+@font-face {
+    font-family: legend;
+    src: url('../Site/Fontes/LegendOfTheGiantPenguinSeaMonster.otf');
+}
+
+.cabeçalho {
+    position: relative;
+    background-color: black;
+    background-image: url(../Site/Imagens/teste1.webp);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.menu1 {
+    height: auto;
+    width: 25%;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+}
+
+.button-menu {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.menu2 {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    bottom: -20px;
+    height: auto;
+    transform: translateX(-50%);
+    text-align: center;
+    align-items: center;
+}
+
+.title1 {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+.menu3 {
+    height: auto;
+    width: 25%;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 75%;
+    text-align: center;
+    padding-top: 40px;
+    bottom: 0px;
+}
+
+h1.p1 {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: auto;
+    font-size: 80px;
+    font-family: legend;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    margin-top: 100px;
+    display: inline-block;
+    background-color: #000000;
+    background-image: url(../Site/Imagens/teste1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 10px white;
+}
+
+.ft {
+    position: relative;
+    display: inline-block;
+}
+
+
+.copy {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.copy1 {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.face {
+    margin-top: 10px;
+    margin-left: 30px;
+    position: relative;
+    display: inline;
+    width: 30px;
+    height: 30px; 
+}
+
+.insta {
+    margin-top: 10px;
+    margin-left: 40px;
+    position: relative;
+    display: inline;
+    width: 30px;
+    height: 30px; 
+}
+
+.disc {
+    margin-top: 10px;
+    margin-left: 40px;
+    position: relative;
+    display: inline;
+    width: 35px;
+    height: 30px; 
+}
+
+.linha {
+    width: 100%;
+    background-color: white;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 7px;
+    font-family: legend;
+}
+
+.main-card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*Card 1*/
+
+.card1 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/card_onepiece.png);
+    background-size: cover;
+    padding: 10rem 0 0;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card1:hover,
+.card1:focus-within {
+    transform: scale(1.05);
+}
+
+.card-content1{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card1:hover .card-content1,
+.card1:focus-within .card-content1 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card1:focus-within .card-content1 {
+    transition-duration: 0ms;
+}
+
+.card-content1 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card1:hover .card-content1 > *:not(.card-title),
+.card1:focus-within .card-content1 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 2*/
+
+.card2 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/solo-card.jpg);
+    background-size: cover;
+    padding: 11rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card-content2{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card2:hover .card-content2,
+.card2:focus-within .card-content2 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card2:focus-within .card-content2 {
+    transition-duration: 0ms;
+}
+
+.card-content2 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card2:hover .card-content2 > *:not(.card-title),
+.card2:focus-within .card-content2 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 3*/
+
+.card3 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/dragon-card.webp);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card3:hover {
+    transform: scale(1.05);
+}
+
+.card-content3{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card3:hover .card-content3,
+.card3:focus-within .card-content3 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card3:focus-within .card-content3 {
+    transition-duration: 0ms;
+}
+
+.card-content3 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card3:hover .card-content3 > *:not(.card-titile),
+.card3:focus-within .card-content3 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 4*/
+
+.card4 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/char-card.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card4:hover {
+    transform: scale(1.05);
+}
+
+.card-content4{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card4:hover .card-content4,
+.card4:focus-within .card-content4 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card4:focus-within .card-content4 {
+    transition-duration: 0ms;
+}
+
+.card-content4 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card4:hover .card-content4 > *:not(.card-title),
+.card4:focus-within .card-content4 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 5*/
+
+.card5 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/demon-card.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card-content5{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card5:hover {
+    transform: scale(1.05);
+}
+
+.card5:hover .card-content5,
+.card5:focus-within .card-content5 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card5:focus-within .card-content5 {
+    transition-duration: 0ms;
+}
+
+.card-content5 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card5:hover .card-content5 > *:not(.card-title),
+.card5:focus-within .card-content5 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 6*/
+
+.card6 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/tate-card.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card-content6{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card6:hover {
+    transform: scale(1.05);
+}
+
+.card6:hover .card-content6,
+.card6:focus-within .card-content6 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card6:focus-within .card-content6 {
+    transition-duration: 0ms;
+}
+
+.card-content6 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card6:hover .card-content6 > *:not(.card-title),
+.card6:focus-within .card-content6 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 7*/
+
+.card7 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/sword-card.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card-content7{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card7:hover {
+    transform: scale(1.05);
+}
+
+.card7:hover .card-content7,
+.card7:focus-within .card-content7 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card7:focus-within .card-content7{
+    transition-duration: 0ms;
+}
+
+.card-content7 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card7:hover .card-content7 > *:not(.card-title),
+.card7:focus-within .card-content7 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 8*/
+
+.card8 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/noragami-card.webp);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card-content8{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card8:hover {
+    transform: scale(1.05);
+}
+
+.card8:hover .card-content8,
+.card8:focus-within .card-content8 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card8:focus-within .card-content8 {
+    transition-duration: 0ms;
+}
+
+.card-content8 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card8:hover .card-content8 > *:not(.card-title),
+.card8:focus-within .card-content8 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 9*/
+
+.card9 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/buny-card.webp);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card-content9{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card9:hover {
+    transform: scale(1.05);
+}
+
+.card9:hover .card-content9,
+.card9:focus-within .card-content9 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card9:focus-within .card-content9 {
+    transition-duration: 0ms;
+}
+
+.card-content9 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card9:hover .card-content9 > *:not(.card-title),
+.card9:focus-within .card-content9 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 10*/
+
+.card10 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/boku-card.png);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card-content10{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card10:hover {
+    transform: scale(1.05);
+}
+
+.card10:hover .card-content10,
+.card10:focus-within .card-content10 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card10:focus-within .card-content10 {
+    transition-duration: 0ms;
+}
+
+.card-content10 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card10:hover .card-content10 > *:not(.card-title),
+.card10:focus-within .card-content10 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 11*/
+
+.card11 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/nogame-card.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card-content11{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card11:hover {
+    transform: scale(1.05);
+}
+
+.card11:hover .card-content11,
+.card11:focus-within .card-content11 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card11:focus-within .card-content11 {
+    transition-duration: 0ms;
+}
+
+.card-content11 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card11:hover .card-content11 > *:not(.card-title),
+.card11:focus-within .card-content11 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Card 12*/
+
+.card12 {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/tokyo-card.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+    transition: transform 500ms ease;
+}
+
+.card-content12{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transform: translateY(70%);
+    transition: transform 500ms ease;
+}
+
+.card12:hover {
+    transform: scale(1.05);
+}
+
+.card12:hover .card-content12,
+.card12:focus-within .card-content12 {
+    transform: translateY(0%);
+    transition-delay: 500ms;
+}
+
+.card12:focus-within .card-content12 {
+    transition-duration: 0ms;
+}
+
+.card-content12 > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+} 
+
+.card12:hover .card-content12 > *:not(.card-title),
+.card12:focus-within .card-content12 > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 750ms;
+}
+
+/*Title*/
+
+.card-title {
+    color: white;
+    font-family: legend;
+    position: relative;
+    width: max-content;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1 + 20px);
+    bottom: -2px;
+    width: calc(100% + 10px);
+    background: rgb(38, 0, 255);
+    border: none;
+    border-radius: 50%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.card1:hover .card-title::after,
+.card1:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card2:hover .card-title::after,
+.card2:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card3:hover .card-title::after,
+.card3:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card4:hover .card-title::after,
+.card4:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card5:hover .card-title::after,
+.card5:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card6:hover .card-title::after,
+.card6:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card7:hover .card-title::after,
+.card7:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card8:hover .card-title::after,
+.card8:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card9:hover .card-title::after,
+.card9:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card10:hover .card-title::after,
+.card10:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card11:hover .card-title::after,
+.card1:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+.card12:hover .card-title::after,
+.card12:focus-within .card-title::after {
+    transform: scaleX(1);
+}
+
+/*button*/
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(207, 19%, 9%);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+    border: none;
+    outline: none;
+    background: #111;
+    position: relative;
+    z-index: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:hover:before {
+    opacity: 1;
+}
+
+.button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    border-radius: 0.25em;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.button-menu {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: legend;
+    color: hsl(207, 19%, 9%);
+    padding: 1.0em 1.25em;
+    border-radius: 0.25em;
+    border: none;
+    width: 200px;
+    outline: none;
+    background: #111;
+    position: relative;
+    z-index: 0;
+}
+
+.button-menu:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button-menu:hover:before {
+    opacity: 1;
+}
+
+.button-menu:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    border-radius: 0.25em;
+}

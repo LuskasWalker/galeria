@@ -1,0 +1,51 @@
+.animes {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.cover {
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    background-color: black;
+}
+
+.video-1 {
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    animation-play-state: running;
+}
+
+.img-1 {
+    position: relative;
+    height: 250px;
+    transform: translateX(0%);
+    transition: transform 1s ease;
+    width: 100%;
+}
+
+.cover:hover .img-1{
+    transform: translateX(-75%);
+    opacity: 1;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 
+    opacity 500ms ease-in-out,
+    transform 500ms ease-in-out;
+}
+
+.cover:hover .text{
+    transform: translateX(25%);
+    opacity: 1;
+}

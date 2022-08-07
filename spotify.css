@@ -1,0 +1,2479 @@
+:root {
+    --color-bg-primary: #131313;
+    --color-bg-secondary: #171717;
+    --color-grad-bottom: #132E56;
+    --color-grad-top: #00716A;
+    --color-green-accent: #00B255;
+    --color-text-primary: #FFFFFF;
+    --color-text-muted: #AAAAAA;
+}
+
+.linha2 {
+    width: 100%;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 7px;
+    font-family: legend;
+}
+
+/*Main-card 1*/
+
+.main-card1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*Card 1*/
+
+.card1 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card1:hover {
+    background:  rgba(40, 40, 40);  
+}
+
+.cover1 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(../Site/Imagens/beggin-cover.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background-position: center;
+    transition: 
+    transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark1 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.card-content1{
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: 
+    transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card1:hover .card-content1 {
+    opacity: 1;
+}
+
+.card1:hover .cover1 {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.card1:hover .watermark1 {
+    opacity: 1;
+}
+
+.button1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo1 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p1 {
+    font-size: 15px;
+}
+/*Card 2*/
+
+.card2 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card2:hover {
+    background:  rgba(40, 40, 40);
+    
+}
+
+.cover2 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(../Site/Imagens/f\ u\ till\ i\ f\ u-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out; 
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark2 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content2{
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 500ms ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card2:hover .card-content2 {
+    opacity: 1;
+}
+
+.card2:hover .cover2 {
+    opacity: 0;
+}
+
+.card2:hover .watermark2 {
+    opacity: 1;
+}
+
+.button2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo2 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p2 {
+    font-size: 15px;
+}
+
+/*Card 3*/
+
+.card3 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card3:hover {
+    background:  rgba(40, 40, 40);
+    
+}
+
+.cover3 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(../Site/Imagens/demons-cover.webp);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.watermark3 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content3{
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card3:hover .card-content3 {
+    opacity: 1;
+}
+
+.card3:hover .cover3 {
+    opacity: 0;
+}
+
+.card3:hover .watermark3 {
+    opacity: 1;
+}
+
+.button3 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo3 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p3 {
+    font-size: 15px;
+}
+
+/*Card 4*/
+
+.card4 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card4:hover {
+    background:  rgba(40, 40, 40);
+    
+}
+
+.cover4 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(../Site/Imagens/neffex-card.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: 
+    transform 500ms ease,
+    opacity 500ms;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark4 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out; 
+}
+
+.card-content4 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition:opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card4:hover .card-content4 {
+    opacity: 1;
+}
+
+.card4:hover .cover4 {
+    opacity: 0;
+}
+
+.card4:hover .watermark4 {
+    opacity: 1;
+}
+
+.button4 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo4 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p4 {
+    font-size: 15px;
+}
+
+/*Card 5*/
+
+.card5 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card5:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover5 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(../Site/Imagens/impossible-card.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark5 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content5 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card5:hover .card-content5 {
+    opacity: 1;
+}
+
+.card5:hover .cover5 {
+    opacity: 0;
+}
+
+.card5:hover .watermark5 {
+    opacity: 1;
+}
+
+.button5 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo5 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p5 {
+    font-size: 15px;
+}
+
+/*Card 6*/
+
+.card6 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card6:hover {
+    background:  rgba(40, 40, 40);
+    
+}
+
+.cover6 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../Site/Imagens/dynasty-card.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark6 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content6 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card6:hover .card-content6 {
+    opacity: 1;
+}
+
+.card6:hover .cover6 {
+    opacity: 0;
+}
+
+.card6:hover .watermark6 {
+    opacity: 1;
+}
+
+.button6 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo6 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p6 {
+    font-size: 15px;
+}
+
+/*Card 7*/
+
+.card7 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card7:hover {
+    background:  rgba(40, 40, 40);
+    
+}
+
+.cover7 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../Site/Imagens/WW-card.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark7 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content7 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card7:hover .card-content7 {
+    opacity: 1;
+}
+
+.card7:hover .cover7 {
+    opacity: 0;
+}
+
+.card7:hover .watermark7 {
+    opacity: 1;
+}
+
+.button7 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo7 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p7 {
+    font-size: 15px;
+}
+
+.card-title7 {
+    position: relative;
+    font-size: 20px;
+}
+
+.mtitle7 {
+    font-size: 20px;
+}
+/*Card 8*/
+
+.card8 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card8:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover8 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../Site/Imagens/alone-card.png);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 500ms;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark8 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content8 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card8:hover .card-content8 {
+    opacity: 1;
+}
+
+.card8:hover .cover8 {
+    opacity: 0;
+}
+
+.card8:hover .watermark8 {
+    opacity: 1;
+}
+
+.button8 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo8 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p8 {
+    font-size: 15px;
+}
+
+/*Card 9*/
+
+.card9 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card9:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover9 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../Site/Imagens/angels-card.webp);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark9 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content9 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card9:hover .card-content9 {
+    opacity: 1;
+}
+
+.card9:hover .cover9 {
+    opacity: 0;
+}
+
+.card9:hover .watermark9 {
+    opacity: 1;
+}
+
+.button9 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo9 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p9 {
+    font-size: 15px;
+}
+
+.card-title9 {
+    position: relative;
+    font-size: 20px;
+}
+
+.mtitle9 {
+    font-size: 23px;
+}
+
+/*Card 10*/
+
+.card10 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card10:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover10 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../Site/Imagens/heat-cover.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark10 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content10 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card10:hover .card-content10 {
+    opacity: 1;
+}
+
+.card10:hover .cover10 {
+    opacity: 0;
+}
+
+.card10:hover .watermark10 {
+    opacity: 1;
+}
+
+.button10 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo10 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p10 {
+    font-size: 15px;
+}
+
+/*Card 11*/
+
+.card11 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card11:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover11 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../Site/Imagens/rise-card.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark11 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content11 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card11:hover .card-content11 {
+    opacity: 1;
+}
+
+.card11:hover .cover11 {
+    opacity: 0;
+}
+
+.card11:hover .watermark11 {
+    opacity: 1;
+}
+
+.button11 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo11 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p11 {
+    font-size: 15px;
+}
+
+/*Card 12*/
+
+.card12 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card12:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover12 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(../Site/Imagens/ghost-card.webp);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark12 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content12 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card12:hover .card-content12 {
+    opacity: 1;
+}
+
+.card12:hover .cover12 {
+    opacity: 0;
+}
+
+.card12:hover .watermark12 {
+    opacity: 1;
+}
+
+.button12 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo12 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p12 {
+    font-size: 15px;
+}
+
+/*Card 13*/
+
+.card13 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card13:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover13 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../Site/Imagens/para-card.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark13 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content13 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card13:hover .card-content13 {
+    opacity: 1;
+}
+
+.card13:hover .cover13 {
+    opacity: 0;
+}
+
+.card13:hover .watermark13 {
+    opacity: 1;
+}
+
+.button13 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo13 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p13 {
+    font-size: 15px;
+}
+
+/*Card 14*/
+
+.card14 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card14:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover14 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(../Site/Imagens/atlantis-card.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark14 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content14 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card14:hover .card-content14 {
+    opacity: 1;
+}
+
+.card14:hover .cover14 {
+    opacity: 0;
+}
+
+.card14:hover .watermark14 {
+    opacity: 1;
+}
+
+.button14 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo14 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p14 {
+    font-size: 15px;
+}
+
+/*Card 15*/
+
+.card15 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card15:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover15 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../Site/Imagens/idfc-card.webp);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark15 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content15 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card15:hover .card-content15 {
+    opacity: 1;
+}
+
+.card15:hover .cover15 {
+    opacity: 0;
+}
+
+.card15:hover .watermark15 {
+    opacity: 1;
+}
+
+.button15 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo15 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p15 {
+    font-size: 15px;
+}
+
+/*Card 16*/
+
+.card16 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card16:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover16 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: top;
+    background-image: url(../Site/Imagens/arcade-card.png);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: 
+    transform 500ms ease-in-out,
+    opacity 500ms ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark16 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content16 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: 
+    transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+    transform-origin: top;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card16:hover .card-content16 {
+    opacity: 1;
+}
+
+.card16:hover .cover16 {
+    opacity: 0;
+}
+
+.card16:hover .watermark16 {
+    opacity: 1;
+}
+
+.button16 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo16 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p16 {
+    font-size: 15px;
+}
+
+/*Card 17*/
+
+.card17 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card17:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover17 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: top;
+    background-image: url(../Site/Imagens/like-card.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: 
+    transform 500ms ease-in-out,
+    opacity 500ms ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark17 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content17 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: 
+    transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+    transform-origin: top;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card17:hover .card-content17 {
+    opacity: 1;
+}
+
+.card17:hover .cover17 {
+    opacity: 0;
+}
+
+.card17:hover .watermark17 {
+    opacity: 1;
+}
+
+.button17 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo17 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p17 {
+    font-size: 15px;
+}
+
+/*Card 18*/
+
+.card18 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg-secondary);
+    height: auto;
+    width: 196px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    border-radius: 0.5rem;
+    transition: 500ms ease;
+}
+
+.card18:hover {
+    background:  rgba(40, 40, 40);
+}
+
+.cover18 {
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: top;
+    background-image: url(../Site/Imagens/death-card.png);
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transition: 
+    transform 500ms ease-in-out,
+    opacity 500ms ease-in-out;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.watermark18 {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.5em;
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.card-content18 {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: linear-gradient(var(--color-grad-top), var(--color-grad-bottom));
+    transition: 
+    transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+    transform-origin: top;
+    text-align: center;
+    box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.card18:hover .card-content18 {
+    opacity: 1;
+}
+
+.card18:hover .cover18 {
+    opacity: 0;
+}
+
+.card18:hover .watermark18 {
+    opacity: 1;
+}
+
+.button18 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: var(--color-green-accent);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.0rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.conteudo18 {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: auto;
+    bottom: 10px;
+    padding-top: 20px;
+    line-height: 3px;
+    padding-left: 20px;
+}
+
+.p18 {
+    font-size: 15px;
+}
+
+/*main-card-filme*/
+
+.main-card-filme1 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*card-filme1*/
+
+.card-filme1 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/ferro-card.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+}
+
+.card-content-filme1 {
+    position: relative;
+    bottom: 0px;
+    border: none;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: justify;
+}
+
+.card-filme1:hover .card-content-filme1,
+.card-filme1:focus-within .card-content-filme1 {
+    opacity: 1;
+}
+
+/*card-filme2*/
+
+.card-filme2 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/kimi-card.png);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0;
+    margin-bottom: 15px;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+}
+
+.card-content-filme2 {
+    position: relative;
+    bottom: 0px;
+    border: none;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: justify;
+}
+
+.card-filme2:hover .card-content-filme2,
+.card-filme2:focus-within .card-content-filme2 {
+    opacity: 1;
+}
+
+/*card-filme3*/
+
+.card-filme3 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/rei-card.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0;
+    margin-bottom: 15px;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+}
+
+.card-content-filme3 {
+    position: relative;
+    bottom: 0px;
+    border: none;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: justify;
+}
+
+.card-filme3:hover .card-content-filme3,
+.card-filme3:focus-within .card-content-filme3 {
+    opacity: 1;
+}
+
+/*card-filme4*/
+
+.card-filme4 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/need-card.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0;
+    margin-bottom: 15px;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+}
+
+.card-content-filme4 {
+    position: relative;
+    bottom: 0px;
+    border: none;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: justify;
+}
+
+.card-filme4:hover .card-content-filme4,
+.card-filme4:focus-within .card-content-filme4 {
+    opacity: 1;
+}
+
+/*card-filme5*/
+
+.card-filme5 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/fasr-card.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50ch;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+}
+
+.card-content-filme5 {
+    position: relative;
+    bottom: 0px;
+    border: none;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: justify;
+}
+
+.card-filme5:hover .card-content-filme5,
+.card-filme5:focus-within .card-content-filme5 {
+    opacity: 1;
+}
+
+/*card-filme6*/
+
+.card-filme6 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/avengers-card.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0;
+    margin-bottom: 15px;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+}
+
+.card-content-filme6 {
+    position: relative;
+    bottom: 0px;
+    border: none;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: justify;
+}
+
+.card-filme6:hover .card-content-filme6,
+.card-filme6:focus-within .card-content-filme6 {
+    opacity: 1;
+}
+
+/*card-filme7*/
+
+.card-filme7 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/gente-card.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0;
+    margin-bottom: 15px;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+}
+
+.card-content-filme7 {
+    position: relative;
+    bottom: 0px;
+    border: none;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: justify;
+}
+
+.card-filme7:hover .card-content-filme7,
+.card-filme7:focus-within .card-content-filme7 {
+    opacity: 1;
+}
+
+/*card-filme8*/
+
+.card-filme8 {
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-image: url(../Site/Imagens/tenki-card.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0 0;
+    margin-bottom: 15px;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 5px 10px rgb(0, 0, 0);
+}
+
+.card-content-filme8 {
+    position: relative;
+    bottom: 0px;
+    border: none;
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.5) 20%,
+        hsl(0 0% 0% / 1)
+    );
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: justify;
+}
+
+.card-filme8:hover .card-content-filme8,
+.card-filme8:focus-within .card-content-filme8 {
+    opacity: 1;
+}
+
+/*Title-film*/
+
+.card-title-filme {
+    color: white;
+    font-family: legend;
+    position: relative;
+    width: max-content;
+}
+
+/*button film*/
+
+.button-filme {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(207, 19%, 9%);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+    border: none;
+    outline: none;
+    background: #111;
+    position: relative;
+    z-index: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.button-filme:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button-filme:hover:before {
+    opacity: 1;
+}
+
+.button-filme:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    border-radius: 0.25em;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
